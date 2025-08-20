@@ -18,7 +18,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "http://192.168.1.111:3000,http://burly-fold1234.surge.sh/",
+      "http://192.168.1.111:3000",
+      "http://burly-fold1234.surge.sh",
     ],
     credentials: true,
   })
