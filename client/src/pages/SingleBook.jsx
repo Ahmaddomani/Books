@@ -22,7 +22,7 @@ export const SingleBook = () => {
 
   const deleteBook = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/books/${id}`, {
+      await axios.delete(`https://books-1-dgne.onrender.com/books/${id}`, {
         withCredentials: true,
       });
       return true;

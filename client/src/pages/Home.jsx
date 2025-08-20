@@ -31,9 +31,12 @@ export const Home = () => {
   const getBooks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:3000/books", {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        "https://books-1-dgne.onrender.com/books",
+        {
+          withCredentials: true,
+        }
+      );
       setBooks(response.data.data);
       response.data.data;
     } catch (error) {
