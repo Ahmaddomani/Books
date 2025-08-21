@@ -94,9 +94,12 @@ export const SingleBook = () => {
   // ---------------------Get Book Function Start -----------------
   const getBook = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/books/${id}`, {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        `https://books-1-dgne.onrender.com/books/${id}`,
+        {
+          withCredentials: true,
+        }
+      );
       setBook(response.data.data);
     } catch (error) {
       setAxiosError(error);
@@ -111,7 +114,7 @@ export const SingleBook = () => {
     try {
       setSaving(true);
       const response = await axios.patch(
-        `http://localhost:3000/books/${id}`,
+        `https://books-1-dgne.onrender.com/books/${id}`,
         form,
         {
           withCredentials: true,
