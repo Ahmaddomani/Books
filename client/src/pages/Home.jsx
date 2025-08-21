@@ -123,7 +123,7 @@ export const Home = () => {
         {books.map((book, index) => {
           return (
             <div
-              onClick={() => navigator(`/books/${book._id}`)}
+              onClick={() => navigator(`/book/${book._id}`)}
               key={index}
               className="min-w-[300px] border p-4 hover:bg-slate-300 hover:scale-105 cursor-pointer duration-150"
             >
