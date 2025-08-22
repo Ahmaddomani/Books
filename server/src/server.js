@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://192.168.1.111:3000",
-      "https://burly-fold1234.surge.sh",
+      "http://skinny-market123.surge.sh/",
     ],
     credentials: true,
   })
